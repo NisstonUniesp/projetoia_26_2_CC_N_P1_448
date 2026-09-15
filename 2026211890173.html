@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA e o Impacto na Sociedade</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        header {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.95)),
+                radial-gradient(circle at center, #2563eb, #0f172a 60%);
+        }
+
+        header h1 {
+            font-size: 4rem;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 1.3rem;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #38bdf8;
+            transform: scale(1.05);
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-size: 2.3rem;
+            color: #38bdf8;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            color: #cbd5e1;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #7dd3fc;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .positive {
+            border-left: 5px solid #22c55e;
+        }
+
+        .negative {
+            border-left: 5px solid #ef4444;
+        }
+
+        .timeline {
+            border-left: 3px solid #38bdf8;
+            padding-left: 30px;
+            margin-top: 40px;
+        }
+
+        .timeline div {
+            margin-bottom: 30px;
+        }
+
+        .timeline h3 {
+            color: #7dd3fc;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+            padding: 50px 30px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .highlight h2 {
+            color: white;
+        }
+
+        .highlight p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.7rem;
+            }
+
+            header p {
+                font-size: 1.1rem;
+            }
+
+            h2 {
+                font-size: 1.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Inteligência Artificial</h1>
+            <p>
+                Como a IA está transformando a tecnologia, o trabalho,
+                a educação, a saúde e a sociedade.
+            </p>
+
+            <a href="#impactos" class="btn">Explorar impactos</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>O que é Inteligência Artificial?</h2>
+
+            <p class="intro">
+                Inteligência Artificial (IA) é um conjunto de tecnologias
+                que permite que computadores realizem tarefas que normalmente
+                exigem capacidades associadas à inteligência humana, como
+                reconhecer padrões, compreender linguagem, gerar conteúdo
+                e auxiliar na tomada de decisões.
+            </p>
+        </section>
+
+        <section id="impactos">
+            <h2>Impactos na Sociedade</h2>
+
+            <div class="cards">
+
+                <div class="card positive">
+                    <h3>🏥 Saúde</h3>
+                    <p>
+                        Sistemas de IA podem auxiliar profissionais de saúde
+                        na análise de exames, pesquisa científica,
+                        descoberta de medicamentos e organização de informações.
+                    </p>
+                </div>
+
+                <div class="card positive">
+                    <h3>🎓 Educação</h3>
+                    <p>
+                        Ferramentas de IA podem ajudar estudantes a aprender,
+                        adaptar materiais ao seu nível e apoiar professores
+                        na criação de atividades.
+                    </p>
+                </div>
+
+                <div class="card positive">
+                    <h3>💼 Trabalho</h3>
+                    <p>
+                        A automação pode reduzir tarefas repetitivas e criar
+                        novas formas de trabalho, ao mesmo tempo em que
+                        transforma algumas profissões e exige novas habilidades.
+                    </p>
+                </div>
+
+                <div class="card positive">
+                    <h3>🔬 Ciência</h3>
+                    <p>
+                        A IA pode acelerar análises de grandes volumes de dados
+                        e contribuir para pesquisas em áreas como biologia,
+                        astronomia e engenharia.
+                    </p>
+                </div>
+
+                <div class="card negative">
+                    <h3>⚠️ Desinformação</h3>
+                    <p>
+                        Sistemas generativos podem facilitar a criação de
+                        conteúdos falsos ou enganosos, tornando a verificação
+                        de informações ainda mais importante.
+                    </p>
+                </div>
+
+                <div class="card negative">
+                    <h3>🔐 Privacidade</h3>
+                    <p>
+                        O uso de grandes quantidades de dados levanta questões
+                        sobre privacidade, segurança e uso responsável de
+                        informações pessoais.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Principais desafios</h2>
+
+            <div class="timeline">
+
+                <div>
+                    <h3>1. Empregos e automação</h3>
+                    <p>
+                        Algumas atividades podem ser automatizadas, enquanto
+                        novas funções e habilidades podem surgir.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>2. Ética e responsabilidade</h3>
+                    <p>
+                        É necessário discutir como sistemas de IA devem ser
+                        desenvolvidos, utilizados e supervisionados.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>3. Preconceitos nos sistemas</h3>
+                    <p>
+                        Sistemas de IA podem reproduzir padrões presentes
+                        nos dados utilizados para seu desenvolvimento.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>4. Segurança</h3>
+                    <p>
+                        Quanto mais presente a IA estiver na sociedade,
+                        maior será a importância de desenvolver sistemas
+                        seguros e confiáveis.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="highlight">
+                <h2>O futuro da IA</h2>
+
+                <p>
+                    A Inteligência Artificial continuará evoluindo e
+                    provavelmente estará cada vez mais presente em diferentes
+                    áreas da vida cotidiana. O impacto dessa tecnologia
+                    dependerá não apenas de seus avanços técnicos, mas também
+                    das escolhas feitas por empresas, governos, pesquisadores
+                    e pela sociedade.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Inteligência Artificial e Sociedade</p>
+        <p>Informação, tecnologia e responsabilidade.</p>
+    </footer>
+
+</body>
+</html>
