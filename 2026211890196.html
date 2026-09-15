@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA no Ensino Superior | O Impacto do Claude</title>
+    <style>
+        :root {
+            --primary: #c96442; /* Tom terracota/laranja suave característico do Claude */
+            --primary-dark: #a24b31;
+            --bg-body: #fbf9f5;
+            --bg-card: #ffffff;
+            --text-main: #2d2d2d;
+            --text-muted: #555555;
+            --border: #e2ddd5;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header / Hero */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Seções Genericas */
+        section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Grid de Benefícios e Aplicações */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--bg-body);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* Lista de Pontos Diretos */
+        ul.bullet-list {
+            list-style: none;
+        }
+
+        ul.bullet-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            font-size: 0.98rem;
+        }
+
+        ul.bullet-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Tabela de Alunos Responsiva */
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: var(--bg-body);
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: rgba(201, 100, 66, 0.03);
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            padding: 20px 0;
+        }
+
+        /* Ajustes para telas muito pequenas */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            th, td {
+                padding: 8px 10px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Banner / Introdução -->
+        <header>
+            <h1>Inteligência Artificial no Ensino Superior</h1>
+            <p>
+                Como o modelo de linguagem **Claude** está transformando a rotina universitária, impulsionando a **produtividade científica**, a **autonomia nos estudos** e a **inovação pedagógica**.
+            </p>
+        </header>
+
+        <!-- Benefícios da IA na Educação -->
+        <section>
+            <h2>💡 Benefícios Principais</h2>
+            <ul class="bullet-list">
+                <li><strong>Aprendizado Personalizado:</strong> Funciona como um **tutor individual 24/7**, adaptando explicações complexas ao ritmo de cada estudante.</li>
+                <li><strong>Otimização de Tempo:</strong> Acelera a **leitura crítica de artigos longos** e a **síntese de grandes volumes de dados**.</li>
+                <li><strong>Acessibilidade Ampliada:</strong> Facilita a compreensão de textos densos através de **resumos estruturados** e **linguagem simplificada**.</li>
+                <li><strong>Suporte à Programação:</strong> Auxilia alunos de exatas na **depuração de códigos** e **construção de algoritmos**.</li>
+            </ul>
+        </section>
+
+        <!-- Aplicações Práticas -->
+        <section>
+            <h2>🚀 Aplicações no Ambiente Acadêmico</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <h3>🔍 Pesquisa Científica</h3>
+                    <p>
+                        Apoio no **mapeamento bibliográfico**, análise de dados textuais e estruturação de **hipóteses de pesquisa** com raciocínio lógico refinado.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>📚 Ensino & Aprendizagem</h3>
+                    <p>
+                        Criação de **simulados de prova**, auxílio em **redação acadêmica** e tradução/interpretação de **artigos em idiomas estrangeiros**.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>⚙️ Inovação Pedagógica</h3>
+                    <p>
+                        Suporte a professores na **criação de planos de aula**, desenvolvimento de **estudos de caso práticos** e **módulos interativos**.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tabela dos Alunos Responsáveis -->
+        <section>
+            <h2>👥 Alunos Responsáveis pela Pesquisa</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Nome do Aluno</th>
+                            <th>Curso</th>
+                            <th>Função no Projeto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>2026211890196</strong></td>
+                            <td>Jose Almeida de Sa Junior</td>
+                            <td>Ciência da Computação</td>
+                            <td><strong>Desenvolvimento Web</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>Projeto Acadêmico — **Pesquisa sobre IA Aplicada à Educação** &copy; 2026</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
