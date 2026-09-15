@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pesquisa: Inteligência Artificial nas Universidades</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #f18cec, #ec84e4);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 18px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #e546e5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #e277c7;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: #f897eb;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        h3 {
+            color: #333;
+            margin: 20px 0 10px;
+        }
+
+        .introducao {
+            font-size: 17px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            padding: 25px;
+            border-radius: 12px;
+            background: #f5f3ff;
+            border-left: 5px solid #d563f1;
+        }
+
+        .card h3 {
+            color: #e99be5;
+        }
+
+        ul {
+            margin-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .dados {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .dado {
+            text-align: center;
+            background: #eef2ff;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .dado strong {
+            display: block;
+            font-size: 30px;
+            color: #e984e4;
+        }
+
+        .conclusao {
+            background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+            border-left: 6px solid #e046e5;
+        }
+
+        .referencias li {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #4b1b47;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            section {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>O Uso de Aplicativos de IA nas Universidades</h1>
+        <p>
+            Uma pesquisa sobre a utilização da Inteligência Artificial no ensino superior,
+            seus benefícios, desafios e importância para estudantes e professores.
+        </p>
+    </header>
+
+    <nav>
+        <a href="#introducao">Introdução</a>
+        <a href="#importancia">Importância</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#desafios">Desafios</a>
+        <a href="#conclusao">Conclusão</a>
+    </nav>
+
+    <main>
+
+        <section id="introducao">
+            <h2>Introdução</h2>
+
+            <p class="introducao">
+                A Inteligência Artificial (IA) vem ganhando espaço em diferentes áreas
+                da sociedade, incluindo a educação. Nas universidades, aplicativos
+                baseados em IA podem auxiliar estudantes na pesquisa, organização dos
+                estudos, produção de textos, resolução de dúvidas e desenvolvimento
+                de novas habilidades.
+            </p>
+
+            <br>
+
+            <p class="introducao">
+                Este trabalho tem como objetivo apresentar uma análise sobre o uso de
+                aplicativos de IA no ambiente universitário, destacando sua importância,
+                seus benefícios e os desafios relacionados ao seu uso responsável.
+            </p>
+        </section>
+
+        <section id="importancia">
+            <h2>Por que a IA é importante nas universidades?</h2>
+
+            <p>
+                A utilização de ferramentas de Inteligência Artificial pode contribuir
+                para tornar o processo de aprendizagem mais personalizado e acessível.
+                Os estudantes podem utilizar esses recursos como apoio para compreender
+                conteúdos e desenvolver suas atividades acadêmicas.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>📚 Aprendizagem</h3>
+                    <p>
+                        A IA pode explicar conteúdos de diferentes maneiras,
+                        ajudando o estudante a compreender assuntos complexos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>⏱️ Produtividade</h3>
+                    <p>
+                        Aplicativos de IA podem auxiliar na organização de tarefas,
+                        resumos e planejamento dos estudos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>💡 Criatividade</h3>
+                    <p>
+                        Ferramentas de IA podem ajudar na geração de ideias,
+                        pesquisas e desenvolvimento de projetos acadêmicos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🌎 Acessibilidade</h3>
+                    <p>
+                        Recursos de IA podem facilitar o acesso à informação e
+                        oferecer diferentes formas de interação com conteúdos.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="beneficios">
+            <h2>Principais benefícios</h2>
+
+            <p>
+                Entre as possíveis contribuições dos aplicativos de IA para o ensino
+                superior, destacam-se:
+            </p>
+
+            <br>
+
+            <ul>
+                <li>Auxílio na compreensão de conteúdos acadêmicos;</li>
+                <li>Personalização do processo de aprendizagem;</li>
+                <li>Suporte na realização de pesquisas;</li>
+                <li>Auxílio na revisão e organização de textos;</li>
+                <li>Automatização de tarefas repetitivas;</li>
+                <li>Estímulo à criatividade e à criação de projetos;</li>
+                <li>Facilitação do acesso a informações e materiais educacionais.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Como os estudantes podem utilizar a IA?</h2>
+
+            <p>
+                O uso de aplicativos de IA pode ocorrer em diversas etapas da vida
+                acadêmica. Entretanto, essas ferramentas devem ser utilizadas como
+                apoio ao aprendizado, e não como substitutas do estudo e do
+                desenvolvimento do pensamento crítico.
+            </p>
+
+            <h3>Exemplos de utilização:</h3>
+
+            <ul>
+                <li>Explicar conceitos difíceis de determinada disciplina;</li>
+                <li>Criar perguntas para revisar conteúdos antes de uma prova;</li>
+                <li>Auxiliar na organização de um trabalho acadêmico;</li>
+                <li>Identificar possíveis erros em um texto;</li>
+                <li>Auxiliar na programação e no desenvolvimento de projetos;</li>
+                <li>Traduzir ou adaptar materiais para diferentes idiomas;</li>
+                <li>Criar planos de estudo personalizados.</li>
+            </ul>
+        </section>
+
+        <section id="desafios">
+            <h2>Desafios e cuidados</h2>
+
+            <p>
+                Apesar dos benefícios, o uso da Inteligência Artificial no ambiente
+                universitário também apresenta desafios. Um dos principais é evitar
+                que o estudante utilize a ferramenta para substituir completamente
+                seu próprio processo de aprendizagem.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>⚠️ Dependência</h3>
+                    <p>
+                        O uso excessivo pode reduzir a prática de habilidades como
+                        escrita, análise e resolução de problemas.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🔎 Verificação</h3>
+                    <p>
+                        Informações produzidas por IA devem ser verificadas em
+                        fontes confiáveis, pois podem conter erros.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>📝 Autoria</h3>
+                    <p>
+                        É importante respeitar as regras acadêmicas relacionadas
+                        à autoria, citações e utilização de ferramentas de IA.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>🔐 Privacidade</h3>
+                    <p>
+                        Usuários devem ter cuidado ao inserir informações pessoais
+                        ou dados acadêmicos sensíveis em aplicativos.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>O papel dos professores</h2>
+
+            <p>
+                A presença da IA também modifica o papel dos professores. Em vez de
+                apenas transmitir informações, o professor pode orientar os alunos
+                sobre como pesquisar, avaliar informações, identificar erros e utilizar
+                tecnologias de forma ética e responsável.
+            </p>
+
+            <br>
+
+            <p>
+                Dessa forma, a educação sobre Inteligência Artificial torna-se parte
+                importante da formação universitária, preparando os estudantes para
+                um mercado de trabalho cada vez mais tecnológico.
+            </p>
+        </section>
+
+        <section>
+            <h2>Pesquisa com estudantes</h2>
+
+            <p>
+                Para complementar o estudo, uma universidade poderia realizar uma
+                pesquisa com seus estudantes para compreender como as ferramentas
+                de IA estão sendo utilizadas.
+            </p>
+
+            <div class="dados">
+                <div class="dado">
+                    <strong>?</strong>
+                    Estudantes que utilizam IA
+                </div>
+
+                <div class="dado">
+                    <strong>?</strong>
+                    Utilizam para estudar
+                </div>
+
+                <div class="dado">
+                    <strong>?</strong>
+                    Consideram a IA importante
+                </div>
+
+                <div class="dado">
+                    <strong>?</strong>
+                    Receberam orientação sobre IA
+                </div>
+            </div>
+
+            <p style="margin-top: 20px;">
+                <em>
+                    Observação: os valores acima devem ser preenchidos com os resultados
+                    reais de uma pesquisa realizada com os estudantes.
+                </em>
+            </p>
+        </section>
+
+        <section id="conclusao" class="conclusao">
+            <h2>Conclusão</h2>
+
+            <p>
+                O uso de aplicativos de Inteligência Artificial nas universidades
+                apresenta oportunidades para apoiar o ensino e a aprendizagem.
+                Essas ferramentas podem contribuir para a compreensão de conteúdos,
+                organização dos estudos, realização de pesquisas e desenvolvimento
+                de projetos.
+            </p>
+
+            <br>
+
+            <p>
+                Porém, a utilização da IA precisa estar acompanhada de pensamento
+                crítico, verificação das informações, respeito às normas acadêmicas
+                e atenção à privacidade. Assim, a tecnologia pode funcionar como
+                uma ferramenta de apoio à formação dos estudantes, sem substituir
+                o papel do professor nem o esforço necessário para aprender.
+            </p>
+        </section>
+
+        <section class="referencias">
+            <h2>Referências sugeridas</h2>
+
+            <ul>
+                <li>
+                    UNESCO — Inteligência Artificial na educação.
+                </li>
+
+                <li>
+                    UNESCO — Orientações para a IA generativa na educação e pesquisa.
+                </li>
+
+                <li>
+                    Artigos científicos e pesquisas acadêmicas sobre Inteligência
+                    Artificial e educação superior.
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>Pesquisa Acadêmica</strong></p>
+        <p>Uso da Inteligência Artificial nas Universidades</p>
+        <p>© 2026 - Trabalho acadêmico de Tópicos Essenciais para Programação</p>
+    </footer>
+
+</body>
+</html>
