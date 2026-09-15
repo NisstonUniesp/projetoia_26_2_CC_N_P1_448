@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligência Artificial (CSS Puro)</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <!-- NAVEGAÇÃO E SISTEMA DE ABAS EM CSS PURO -->
+    <!-- Inputs do tipo radio invisíveis para controlar a aba ativa -->
+    <input type="radio" id="tab-inicio" name="navegacao" class="tab-radio" checked>
+    <input type="radio" id="tab-conceitos" name="navegacao" class="tab-radio">
+    <input type="radio" id="tab-aplicacoes" name="navegacao" class="tab-radio">
+
+    <!-- Cabeçalho / Menu -->
+    <header>
+        <div class="logo">Mundo IA</div>
+        <nav>
+            <!-- Os rótulos (labels) ativam os inputs radio ocultos quando clicados -->
+            <label for="tab-inicio" class="nav-btn nav-inicio">Início</label>
+            <label for="tab-conceitos" class="nav-btn nav-conceitos">Conceitos</label>
+            <label for="tab-aplicacoes" class="nav-btn nav-aplicacoes">Aplicações</label>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- CONTEÚDO 1: INÍCIO -->
+        <section class="tab-content content-inicio">
+            <div class="hero">
+                <h1>O que é Inteligência Artificial?</h1>
+                <p>A Inteligência Artificial (I.A.) é uma área da ciência da computação que busca criar máquinas e sistemas capazes de simular a inteligência humana, realizando tarefas como aprendizado, análise de dados e tomada de decisões.</p>
+                <label for="tab-conceitos" class="cta-btn">Explorar Tópicos</label>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO 2: CONCEITOS (CARDS CLICÁVEIS NATIVOS) -->
+        <section class="tab-content content-conceitos">
+            <h2>Principais Pilares da IA</h2>
+            <p class="subtitle">Clique em um dos pilares abaixo para expandir e ler as explicações:</p>
+
+            <div class="accordion">
+                <!-- Card 1 -->
+                <details class="card">
+                    <summary class="card-header">
+                        <h3>1. Machine Learning (Aprendizado de Máquina)</h3>
+                        <span class="icon">+</span>
+                    </summary>
+                    <div class="card-body">
+                        <p>Subárea da IA que permite que os computadores aprendam padrões a partir de dados históricos sem precisarem ser programados manualmente para cada regra especifica.</p>
+                    </div>
+                </details>
+
+                <!-- Card 2 -->
+                <details class="card">
+                    <summary class="card-header">
+                        <h3>2. Deep Learning (Aprendizado Profundo)</h3>
+                        <span class="icon">+</span>
+                    </summary>
+                    <div class="card-body">
+                        <p>Inspirado na estrutura do cérebro humano, utiliza redes neurais artificiais com múltiplas camadas. É a tecnologia responsável por reconhecimento de imagem e sistemas avançados de fala.</p>
+                    </div>
+                </details>
+
+                <!-- Card 3 -->
+                <details class="card">
+                    <summary class="card-header">
+                        <h3>3. Processamento de Linguagem Natural (PLN)</h3>
+                        <span class="icon">+</span>
+                    </summary>
+                    <div class="card-body">
+                        <p>Ramificação da IA focada em capacitar computadores a entender, interpretar e gerar a linguagem humana escrita ou falada de forma natural.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO 3: APLICAÇÕES -->
+        <section class="tab-content content-aplicacoes">
+            <h2>IA no Nosso Dia a Dia</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <h3>Saúde</h3>
+                    <p>Diagnósticos médicos mais precisos por imagem, identificação precoce de doenças e desenvolvimento de remédios.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Transportes</h3>
+                    <p>Navegação otimizada em tempo real por GPS, controle de tráfego e veículos autônomos.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Serviços e Mídia</h3>
+                    <p>Recomendação personalizada de conteúdo em redes sociais, robôs de atendimento e tradutores em tempo real.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portal de Informações sobre IA • Feito apenas com HTML e CSS.</p>
+    </footer>
+
+</body>
+</html>
