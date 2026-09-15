@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal IA - O Futuro da Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Navegação -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Portal<span>IA</span></a>
+            
+            <!-- Menu Hambúrguer para Mobile (Sem JS) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#artigos">Conceitos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>Descubra o Poder da Inteligência Artificial</h1>
+            <p>Acompanhe as últimas tendências, conceitos e avanços no universo do Aprendizado de Máquina e IA Generativa.</p>
+            <a href="#noticias" class="btn">Explorar Notícias</a>
+        </div>
+    </section>
+
+    <!-- Notícias em Destaque (Cards) -->
+    <section id="noticias" class="section container">
+        <h2 class="section-title">Últimas Atualizações</h2>
+        <div class="cards-grid">
+            
+            <article class="card">
+                <div class="card-tag">Tecnologia</div>
+                <img src="https://picsum.photos/400/250?random=1" alt="IA Generativa">
+                <div class="card-content">
+                    <h3>O Avanço dos Modelos Generativos em 2024</h3>
+                    <p>Como a criação de texto, imagem e áudio está transformando indústrias inteiras pelo mundo.</p>
+                    <a href="#modal-1" class="read-more">Ler mais &rarr;</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-tag">Ética</div>
+                <img src="https://picsum.photos/400/250?random=2" alt="Regulamentação de IA">
+                <div class="card-content">
+                    <h3>Regulamentação e Ética no Uso da IA</h3>
+                    <p>Entenda os novos debates globais sobre governança, privacidade e viés em algoritmos.</p>
+                    <a href="#modal-2" class="read-more">Ler mais &rarr;</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-tag">Mercado</div>
+                <img src="https://picsum.photos/400/250?random=3" alt="IA no Trabalho">
+                <div class="card-content">
+                    <h3>Como a IA está Mudando o Mercado de Trabalho</h3>
+                    <p>Novas profissões surgem enquanto tarefas rotineiras são automatizadas com alta precisão.</p>
+                    <a href="#modal-3" class="read-more">Ler mais &rarr;</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Modal / Leitura Rápida (Puramente CSS com :target) -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <a href="#noticias" class="modal-close">&times;</a>
+            <h2>O Avanço dos Modelos Generativos</h2>
+            <p>Os modelos de linguagem ampla (LLMs) e geradores de imagem evoluíram drasticamente. Hoje, sistemas conseguem entender contextos complexos, programar códigos completos e auxiliar médicos em diagnósticos preliminares.</p>
+            <p>O futuro reserva a integração multimodal nativa, permitindo ver, ouvir e falar em tempo real.</p>
+        </div>
+    </div>
+
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <a href="#noticias" class="modal-close">&times;</a>
+            <h2>Regulamentação e Ética</h2>
+            <p>Governos ao redor do mundo estão criando marcos regulatórios para garantir que a IA seja desenvolvida de forma segura, protegendo dados pessoais e evitando a disseminação de desinformação.</p>
+        </div>
+    </div>
+
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <a href="#noticias" class="modal-close">&times;</a>
+            <h2>IA no Mercado de Trabalho</h2>
+            <p>A automação impulsionada pela IA exige a requalificação profissional. Habilidades como pensamento crítico, engenharia de prompt e liderança tornam-se cada vez mais valiosas.</p>
+        </div>
+    </div>
+
+    <!-- Guia de Conceitos (Abas em CSS / Tabela) -->
+    <section id="artigos" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Glossário Essencial de IA</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Termo</th>
+                            <th>O que significa?</th>
+                            <th>Exemplo Prático</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Machine Learning</strong></td>
+                            <td>Capacidade de sistemas aprenderem a partir de dados sem serem explicitamente programados.</td>
+                            <td>Filtro de Spam de e-mails.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Deep Learning</strong></td>
+                            <td>Subcampo do Aprendizado de Máquina focado em redes neurais profundas.</td>
+                            <td>Reconhecimento facial em fotos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>LLM</strong></td>
+                            <td>Modelos de Linguagem de Grande Porte treinados com enormes volumes de texto.</td>
+                            <td>ChatGPT, Gemini e Claude.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Visão Computacional</strong></td>
+                            <td>Área que permite que computadores "enxerguem" e interpretem imagens/vídeos.</td>
+                            <td>Carros autônomos identificando pedestres.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perguntas Frequentes (FAQ) Interativo com CSS -->
+    <section id="faq" class="section container">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <div class="faq-accordion">
+            
+            <details>
+                <summary>A Inteligência Artificial vai substituir os humanos?</summary>
+                <div class="faq-content">
+                    <p>A maioria dos especialistas concorda que a IA atuará como um copilot/amplificador das capacidades humanas, automatizando tarefas repetitivas e permitindo que pessoas focem em trabalhos criativos e estratégicos.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Qual a diferença entre IA Forte e IA Fraca?</summary>
+                <div class="faq-content">
+                    <p>A <strong>IA Fraca (ou Estreita)</strong> é projetada para tarefas específicas (como jogar xadrez ou traduzir texto). A <strong>IA Forte (AGI)</strong> refere-se a uma inteligência hipotética com capacidade cognitiva geral igual ou superior à humana.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Como posso começar a estudar IA hoje?</summary>
+                <div class="faq-content">
+                    <p>Recomenda-se começar com lógica de programação em Python, matemática básica (álgebra linear e estatística) e cursos introdutórios de Machine Learning em plataformas gratuitas.</p>
+                </div>
+            </details>
+
+        </div>
+    </section>
+
+    <!-- Formulário de Inscrição sem JS -->
+    <section id="newsletter" class="newsletter-section">
+        <div class="container">
+            <h2>Fique por dentro do mundo da IA</h2>
+            <p>Receba resumos semanais das principais novidades sobre tecnologia diretamente no seu e-mail.</p>
+            <form class="newsletter-form" action="#" method="GET">
+                <input type="email" placeholder="Digite seu melhor e-mail..." required>
+                <button type="submit" class="btn">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portal IA. Desenvolvido apenas com HTML e CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
