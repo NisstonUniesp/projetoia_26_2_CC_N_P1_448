@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bem-vindo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background:
+                radial-gradient(circle at top left, #303030, transparent 40%),
+                linear-gradient(135deg, #080808, #111111);
+
+            color: white;
+        }
+
+        /* Fundo escurecido do aviso */
+        .overlay {
+            position: fixed;
+            inset: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(10px);
+
+            z-index: 1000;
+
+            animation: aparecer 0.4s ease;
+        }
+
+        /* Caixa do aviso */
+        .modal {
+            width: 100%;
+            max-width: 450px;
+
+            padding: 45px 35px;
+
+            text-align: center;
+
+            background: rgba(25, 25, 25, 0.9);
+
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 24px;
+
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.7),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+            animation: subir 0.5s ease;
+        }
+
+        /* Ícone */
+        .icone {
+            width: 70px;
+            height: 70px;
+
+            margin: 0 auto 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: white;
+            color: black;
+
+            font-size: 32px;
+            font-weight: bold;
+
+            box-shadow: 0 10px 35px rgba(255, 255, 255, 0.15);
+        }
+
+        .modal h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+        }
+
+        .modal p {
+            color: #aaaaaa;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Botão */
+        .botao {
+            width: 100%;
+
+            padding: 15px 20px;
+
+            border: none;
+            border-radius: 12px;
+
+            background: white;
+            color: black;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.25s;
+        }
+
+        .botao:hover {
+            transform: translateY(-2px);
+
+            background: #eeeeee;
+
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+        }
+
+        /* Conteúdo da página */
+        .conteudo {
+            text-align: center;
+        }
+
+        .conteudo h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .conteudo p {
+            color: #888;
+        }
+
+        /* Animações */
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes subir {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Classe usada pelo JavaScript */
+        .fechar {
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 500px) {
+            .modal {
+                padding: 35px 25px;
+            }
+
+            .modal h1 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CONTEÚDO NORMAL DA PÁGINA -->
+    <main class="conteudo">
+        <h2>Minha Página</h2>
+        <p>Conteúdo principal do site.</p>
+    </main>
+
+
+    <!-- AVISO DE BOAS-VINDAS -->
+    <div class="overlay" id="aviso">
+
+        <div class="modal">
+
+            <div class="icone">
+                ✓
+            </div>
+
+            <h1>Bem-vindo!</h1>
+
+            <p>
+                É um prazer ter você por aqui.
+                Explore a página e aproveite todo o conteúdo que preparamos para você.
+            </p>
+
+            <button class="botao" onclick="fecharAviso()">
+                Continuar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        function fecharAviso() {
+
+            const aviso = document.getElementById("aviso");
+
+            aviso.classList.add("fechar");
+
+            setTimeout(() => {
+                aviso.style.display = "none";
+            }, 300);
+
+        }
+    </script>
+
+</body>
+</html>
