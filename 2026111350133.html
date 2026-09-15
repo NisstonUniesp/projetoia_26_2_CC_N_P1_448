@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexa AI</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #080b14;
+    color: white;
+}
+
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #202536;
+    background: #0b0f1a;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #725cff;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #7c65ff;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero div {
+    max-width: 800px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #5545c9;
+    border-radius: 30px;
+    color: #a99cff;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #765eff;
+}
+
+.hero p {
+    color: #aaa;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background: #694fff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+.title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.description {
+    text-align: center;
+    color: #999;
+    max-width: 650px;
+    margin: 0 auto 45px;
+    line-height: 1.6;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #101522;
+    border: 1px solid #20283a;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.card:hover {
+    border-color: #6955ff;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #999;
+    line-height: 1.6;
+}
+
+.chat {
+    max-width: 800px;
+    margin: auto;
+    background: #101522;
+    border: 1px solid #252c3d;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.chat-header {
+    padding: 20px;
+    border-bottom: 1px solid #252c3d;
+}
+
+.online {
+    color: #35e87a;
+    font-size: 13px;
+}
+
+.messages {
+    height: 350px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 75%;
+    padding: 13px 17px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.ai {
+    background: #1b2233;
+    color: #ddd;
+}
+
+.user {
+    background: #684fff;
+    margin-left: auto;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-top: 1px solid #252c3d;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #1b2233;
+    color: white;
+}
+
+.input-area button {
+    padding: 0 22px;
+    border: none;
+    border-radius: 10px;
+    background: #684fff;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 35px;
+    color: #777;
+    border-top: 1px solid #202536;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Nexa<span>AI</span></div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#ia">Demonstração</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div>
+
+        <div class="badge">
+            Projeto de Inteligência Artificial
+        </div>
+
+        <h1>
+            Conheça a <span>Nexa AI</span>
+        </h1>
+
+        <p>
+            A Nexa AI é um projeto de inteligência artificial criado
+            para demonstrar como uma IA pode conversar com usuários,
+            interpretar perguntas e fornecer respostas.
+        </p>
+
+        <a href="#ia" class="button">
+            Testar a IA
+        </a>
+
+    </div>
+</section>
+
+<section id="recursos">
+
+    <h2 class="title">
+        Recursos da IA
+    </h2>
+
+    <p class="description">
+        O projeto apresenta alguns dos principais conceitos utilizados
+        na criação de sistemas de inteligência artificial.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🧠</div>
+            <h3>Inteligência</h3>
+            <p>
+                A IA consegue interpretar informações e identificar
+                padrões para produzir respostas.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💬</div>
+            <h3>Conversação</h3>
+            <p>
+                O usuário pode conversar com a inteligência artificial
+                através de uma interface simples.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Velocidade</h3>
+            <p>
+                As respostas são apresentadas rapidamente para tornar
+                a interação mais dinâmica.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="ia">
+
+    <h2 class="title">
+        Converse com a Nexa AI
+    </h2>
+
+    <p class="description">
+        Faça uma pergunta para testar a demonstração.
+    </p>
+
+    <div class="chat">
+
+        <div class="chat-header">
+            <strong>Nexa AI</strong><br>
+            <span class="online">● Online</span>
+        </div>
+
+        <div class="messages" id="messages">
+
+            <div class="message ai">
+                Olá! 👋 Eu sou a Nexa AI. Como posso ajudar?
+            </div>
+
+        </div>
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="input"
+                placeholder="Digite sua pergunta..."
+                onkeydown="if(event.key === 'Enter') enviar()"
+            >
+
+            <button onclick="enviar()">
+                Enviar
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Nexa AI — Projeto de Inteligência Artificial
+</footer>
+
+<script>
+
+function enviar() {
+
+    const input = document.getElementById("input");
+    const messages = document.getElementById("messages");
+
+    const texto = input.value.trim();
+
+    if (texto === "") {
+        return;
+    }
+
+    const usuario = document.createElement("div");
+
+    usuario.className = "message user";
+    usuario.textContent = texto;
+
+    messages.appendChild(usuario);
+
+    input.value = "";
+
+    messages.scrollTop = messages.scrollHeight;
+
+    setTimeout(function() {
+
+        const resposta = document.createElement("div");
+
+        resposta.className = "message ai";
+
+        const pergunta = texto.toLowerCase();
+
+        if (
+            pergunta.includes("oi") ||
+            pergunta.includes("olá") ||
+            pergunta.includes("ola")
+        ) {
+
+            resposta.textContent =
+                "Olá! 👋 É um prazer conversar com você.";
+
+        } else if (
+            pergunta.includes("quem é você") ||
+            pergunta.includes("quem e voce")
+        ) {
+
+            resposta.textContent =
+                "Eu sou a Nexa AI, uma inteligência artificial criada para este projeto.";
+
+        } else if (
+            pergunta.includes("inteligência artificial") ||
+            pergunta.includes("inteligencia artificial") ||
+            pergunta.includes("ia")
+        ) {
+
+            resposta.textContent =
+                "Inteligência Artificial é uma tecnologia que permite que computadores processem informações, reconheçam padrões e realizem tarefas de forma inteligente.";
+
+        } else if (
+            pergunta.includes("como você funciona") ||
+            pergunta.includes("como funciona")
+        ) {
+
+            resposta.textContent =
+                "Eu recebo sua mensagem, analiso o texto e gero uma resposta de acordo com as informações programadas no sistema.";
+
+        } else if (
+            pergunta.includes("obrigado") ||
+            pergunta.includes("obrigada")
+        ) {
+
+            resposta.textContent =
+                "Por nada! 😊 Estou sempre pronta para ajudar.";
+
+        } else {
+
+            resposta.textContent =
+                "Entendi sua pergunta! Esta é uma versão demonstrativa da Nexa AI. Em uma versão completa, eu poderia ser conectada a um modelo real de Inteligência Artificial.";
+
+        }
+
+        messages.appendChild(resposta);
+
+        messages.scrollTop = messages.scrollHeight;
+
+    }, 700);
+}
+
+</script>
+
+</body>
+</html>
