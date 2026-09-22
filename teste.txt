@@ -1,6 +1,22 @@
-dasdsad
-asd
-asd
-asd
-asd
-asd
+ O volume na unidade C n∆o tem nome.
+ O N£mero de SÇrie do Volume Ç 14AB-81D8
+
+ Pasta de C:\Users\Niston\Documents\Projetos\Uniesp\2026_2\T¢picos_Essenciais_para_Programaá∆o\GitHub\repositorio\projetoia_26_2_CC_N_P1_448
+
+22/09/2026  14:00    <DIR>          .
+22/09/2026  14:00    <DIR>          ..
+22/09/2026  13:59             5.123 2025211890075.html
+22/09/2026  13:59             9.150 2026111350133.html
+22/09/2026  13:59             9.576 2026211890173.html
+22/09/2026  13:59             6.839 2026211890185.html
+22/09/2026  13:59            15.135 2026211890190.html
+22/09/2026  13:59             2.229 2026211890192.html
+22/09/2026  13:59             8.543 2026211890196.html
+22/09/2026  13:59             5.554 index.html
+22/09/2026  13:59             1.094 LICENSE
+22/09/2026  13:59               319 odair_barreto.html
+22/09/2026  13:59             1.993 README.md
+22/09/2026  13:59             2.074 style.css
+22/09/2026  14:11                 0 teste.txt
+              13 arquivo(s)         67.629 bytes
+               2 pasta(s)   64.127.692.800 bytes dispon°veis
