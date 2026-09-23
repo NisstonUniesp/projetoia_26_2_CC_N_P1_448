@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google AI Studio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            background: #f8f9fa;
+            color: #202124;
+        }
+
+        /* MENU */
+
+        header {
+            width: 100%;
+            padding: 22px 7%;
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            background: linear-gradient(
+                90deg,
+                #4285f4,
+                #9b72cb,
+                #34a853
+            );
+
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        nav a {
+            color: #5f6368;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* CONTEÚDO */
+
+        main {
+            min-height: calc(100vh - 75px);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 30px 7%;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+        /* TEXTO */
+
+        .tag {
+            color: #4285f4;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 58px;
+            line-height: 1.05;
+
+            margin-bottom: 22px;
+
+            color: #202124;
+        }
+
+        h1 span {
+            background: linear-gradient(
+                90deg,
+                #4285f4,
+                #9b72cb,
+                #34a853
+            );
+
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .intro {
+            color: #5f6368;
+
+            font-size: 17px;
+
+            line-height: 1.7;
+
+            margin-bottom: 20px;
+        }
+
+        .text {
+            color: #70757a;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+
+            margin-bottom: 25px;
+        }
+
+        /* BOTÃO */
+
+        .button {
+            display: inline-block;
+
+            padding: 13px 22px;
+
+            background: #1a73e8;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #1558b0;
+        }
+
+        /* CARD */
+
+        .card {
+            background: white;
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            border: 1px solid #e1e4e8;
+
+            box-shadow:
+                0 15px 40px rgba(60, 64, 67, 0.12);
+        }
+
+        .ai-icon {
+            width: 70px;
+            height: 70px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 20px;
+
+            font-size: 35px;
+
+            margin-bottom: 25px;
+
+            background: linear-gradient(
+                135deg,
+                #4285f4,
+                #9b72cb,
+                #34a853
+            );
+
+            color: white;
+        }
+
+        .card h2 {
+            font-size: 25px;
+
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #70757a;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+
+            margin-bottom: 20px;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card li {
+            padding: 9px 0;
+
+            color: #5f6368;
+
+            font-size: 14px;
+
+            border-bottom: 1px solid #f0f1f2;
+        }
+
+        .card li:last-child {
+            border-bottom: none;
+        }
+
+        .card li::before {
+            content: "✓";
+
+            color: #34a853;
+
+            font-weight: bold;
+
+            margin-right: 10px;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            position: fixed;
+            bottom: 12px;
+            left: 0;
+
+            width: 100%;
+
+            text-align: center;
+
+            color: #9aa0a6;
+
+            font-size: 12px;
+        }
+
+        /* CELULAR */
+
+        @media (max-width: 800px) {
+
+            body {
+                overflow-y: auto;
+            }
+
+            header {
+                padding: 18px 5%;
+            }
+
+            nav a {
+                display: none;
+            }
+
+            main {
+                padding: 50px 5%;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+
+                gap: 30px;
+            }
+
+            h1 {
+                font-size: 43px;
+            }
+
+            footer {
+                position: static;
+                padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                Google <span>AI Studio</span>
+            </div>
+
+            <a href="https://aistudio.google.com/" target="_blank">
+                Abrir Google AI Studio →
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div class="container">
+
+
+            <!-- TEXTO PRINCIPAL -->
+
+            <div>
+
+                <p class="tag">
+                    INTELIGÊNCIA ARTIFICIAL
+                </p>
+
+                <h1>
+                    O que é o
+                    <span>Google AI Studio?</span>
+                </h1>
+
+                <p class="intro">
+                    O Google AI Studio é uma plataforma do Google criada
+                    para facilitar o uso e a experimentação com
+                    inteligência artificial.
+                </p>
+
+                <p class="text">
+                    Com a plataforma, desenvolvedores e criadores podem
+                    testar ideias, criar prompts e experimentar os modelos
+                    Gemini. Ela também pode ser utilizada para desenvolver
+                    protótipos e integrar inteligência artificial em
+                    diferentes projetos.
+                </p>
+
+                <a
+                    href="https://aistudio.google.com/"
+                    target="_blank"
+                    class="button"
+                >
+                    Conhecer o AI Studio
+                </a>
+
+            </div>
+
+
+            <!-- CARD -->
+
+            <div class="card">
+
+                <div class="ai-icon">
+                    ✦
+                </div>
+
+                <h2>
+                    Por que usar?
+                </h2>
+
+                <p>
+                    O Google AI Studio oferece um ambiente simples para
+                    começar a explorar as possibilidades da inteligência
+                    artificial generativa.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Testar modelos Gemini
+                    </li>
+
+                    <li>
+                        Criar e experimentar prompts
+                    </li>
+
+                    <li>
+                        Desenvolver ideias e protótipos
+                    </li>
+
+                    <li>
+                        Explorar recursos de inteligência artificial
+                    </li>
+
+                    <li>
+                        Integrar IA em aplicações
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        Página informativa sobre o Google AI Studio • HTML + CSS
+
+    </footer>
+
+
+</body>
+
+</html>
